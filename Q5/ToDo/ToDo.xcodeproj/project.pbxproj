@@ -20,6 +20,7 @@
 		0B25EEA3260B4A7F00A84927 /* ViewControllerThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B25EEA2260B4A7F00A84927 /* ViewControllerThree.swift */; };
 		0B25EEA7260B53E000A84927 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B25EEA6260B53E000A84927 /* Constraints.swift */; };
 		0B570056260BA9DF00754E6D /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B570055260BA9DF00754E6D /* TaskModel.swift */; };
+		0B57005A260C40A700754E6D /* CreateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B570059260C40A700754E6D /* CreateTask.swift */; };
 		0BE3C596260B5AA30051BF08 /* LivePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE3C595260B5AA30051BF08 /* LivePreview.swift */; };
 		0BE3C59D260B66B80051BF08 /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE3C59C260B66B80051BF08 /* ViewCell.swift */; };
 		0BE3C5A0260B66C40051BF08 /* ViewCellTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE3C59F260B66C40051BF08 /* ViewCellTwo.swift */; };
@@ -41,6 +42,7 @@
 		0B25EEA2260B4A7F00A84927 /* ViewControllerThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerThree.swift; sourceTree = "<group>"; };
 		0B25EEA6260B53E000A84927 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		0B570055260BA9DF00754E6D /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		0B570059260C40A700754E6D /* CreateTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTask.swift; sourceTree = "<group>"; };
 		0BE3C595260B5AA30051BF08 /* LivePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePreview.swift; sourceTree = "<group>"; };
 		0BE3C59C260B66B80051BF08 /* ViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
 		0BE3C59F260B66C40051BF08 /* ViewCellTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCellTwo.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				0BE3C599260B669F0051BF08 /* Controller */,
 				0BE3C598260B66970051BF08 /* Cell */,
 				0B570055260BA9DF00754E6D /* TaskModel.swift */,
+				0B570059260C40A700754E6D /* CreateTask.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				0B25EE87260B380B00A84927 /* AppDelegate.swift in Sources */,
 				0B25EE9D260B38A400A84927 /* HomeTabbarController.swift in Sources */,
 				0BE3C59D260B66B80051BF08 /* ViewCell.swift in Sources */,
+				0B57005A260C40A700754E6D /* CreateTask.swift in Sources */,
 				0BE3C5A0260B66C40051BF08 /* ViewCellTwo.swift in Sources */,
 				0B0B6079260B6A9D00D90B15 /* NestedViewCell.swift in Sources */,
 				0B570056260BA9DF00754E6D /* TaskModel.swift in Sources */,
