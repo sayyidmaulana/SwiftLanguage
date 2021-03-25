@@ -9,9 +9,43 @@ import UIKit
 
 class NestedViewCellTwo: UITableViewCell {
     
+    lazy var titleStackView: UIStackView = {
+        let titleLabel = UILabel()
+        titleLabel.textAlignment = .center
+        titleLabel.text = "Time"
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 15)
+        titleLabel.tintColor = .black
+        titleLabel.tag = 0
+        $0.addArrangedSubview(titleLabel)
+        let subtitleLabel = UILabel()
+        subtitleLabel.textAlignment = .center
+        subtitleLabel.text = "Agenda"
+        subtitleLabel.font = UIFont.italicSystemFont(ofSize: 10)
+        subtitleLabel.tintColor = .blue
+        subtitleLabel.tag = 1
+        $0.addArrangedSubview(subtitleLabel)
+        let thirdtitleLabel = UILabel()
+        thirdtitleLabel.textAlignment = .center
+        thirdtitleLabel.text = "Status"
+        thirdtitleLabel.font = UIFont.boldSystemFont(ofSize: 15)
+        thirdtitleLabel.tintColor = .orange
+        thirdtitleLabel.tag = 3
+        $0.addArrangedSubview(thirdtitleLabel)
+        let stackView = UIStackView(arrangedSubviews: [titleLabel, subtitleLabel, thirdtitleLabel])
+        stackView.alignment = .center
+        stackView.distribution = .equalCentering
+        stackView.axis = .horizontal
+        return stackView
+    }(UIStackView())
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-       
+        setupView()
+    }
+    
+    private func setupView() {
+        addSubview(titleStackView)
+        titleStackView.setAnchor(top: topAnchor, left: leadingAnchor, bottom: bottomAnchor, right: trailingAnchor, paddingTop: 10, paddingLeft: 25, paddingBottom: 10, paddingRight: 25, width: 0, height: 0)
     }
     
     required init?(coder: NSCoder) {

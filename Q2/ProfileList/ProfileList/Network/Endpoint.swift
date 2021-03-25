@@ -44,7 +44,7 @@ extension ProfileBase: TargetType {
     
     var headers: [String : String]? {
             return [
-                "Content-Type" : "application/json"
+                "Content-Type" : "text/html; charset=utf-8"
             ]
         }
     
