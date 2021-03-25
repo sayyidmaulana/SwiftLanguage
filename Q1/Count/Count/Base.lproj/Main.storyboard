@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Count" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nasi" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5DV-PK-MDi">
+                                <rect key="frame" x="16" y="136" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lauk" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x0D-HP-gFS">
+                                <rect key="frame" x="16" y="196" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Minum" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u33-Af-MEL">
+                                <rect key="frame" x="16" y="253" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warung Makan Sederhana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tx0-fR-2vt">
+                                <rect key="frame" x="93" y="22" width="201" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total bayar:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4f-cH-biL">
+                                <rect key="frame" x="37" y="356" width="88" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4Ps-uZ-e6Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama Kasir: Maul" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tg3-wb-KGI">
+                                <rect key="frame" x="37" y="88" width="133" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M36-bN-ydu">
+                                <rect key="frame" x="62" y="301" width="251" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2cs-Vr-gYR"/>
+                                </constraints>
+                                <state key="normal" title="Bayar">
+                                    <color key="titleColor" red="0.89402025939999996" green="0.8941736817" blue="0.89401060340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tg3-wb-KGI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="1o8-Gw-CPh"/>
+                            <constraint firstItem="u33-Af-MEL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4rm-xo-an2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u33-Af-MEL" secondAttribute="trailing" constant="16" id="51N-NQ-c0l"/>
+                            <constraint firstItem="tx0-fR-2vt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="5Lm-gY-q3J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x0D-HP-gFS" secondAttribute="trailing" constant="16" id="Ewe-wn-lYi"/>
+                            <constraint firstItem="M36-bN-ydu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="GhS-aX-IGZ"/>
+                            <constraint firstItem="M36-bN-ydu" firstAttribute="top" secondItem="u33-Af-MEL" secondAttribute="bottom" constant="14" id="H9m-CQ-bYX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5DV-PK-MDi" secondAttribute="trailing" constant="16" id="POf-zX-ia2"/>
+                            <constraint firstItem="Tg3-wb-KGI" firstAttribute="top" secondItem="tx0-fR-2vt" secondAttribute="bottom" constant="45" id="QQe-wp-unU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M36-bN-ydu" secondAttribute="trailing" constant="62" id="Sda-TL-lih"/>
+                            <constraint firstItem="G4f-cH-biL" firstAttribute="top" secondItem="M36-bN-ydu" secondAttribute="bottom" constant="15" id="UTe-K4-kE1"/>
+                            <constraint firstItem="x0D-HP-gFS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZVM-0U-eZN"/>
+                            <constraint firstItem="5DV-PK-MDi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="euY-xb-Isy"/>
+                            <constraint firstItem="x0D-HP-gFS" firstAttribute="top" secondItem="5DV-PK-MDi" secondAttribute="bottom" constant="26" id="lBH-yj-peU"/>
+                            <constraint firstItem="tx0-fR-2vt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="qqT-Gz-dJf"/>
+                            <constraint firstItem="5DV-PK-MDi" firstAttribute="top" secondItem="Tg3-wb-KGI" secondAttribute="bottom" constant="27" id="rat-A7-BRn"/>
+                            <constraint firstItem="u33-Af-MEL" firstAttribute="top" secondItem="x0D-HP-gFS" secondAttribute="bottom" constant="23" id="s5l-LI-xax"/>
+                            <constraint firstItem="G4f-cH-biL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="xhk-KA-6HR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bayarButton" destination="M36-bN-ydu" id="E6u-mE-kD6"/>
+                        <outlet property="lauk" destination="x0D-HP-gFS" id="ENW-yO-lec"/>
+                        <outlet property="minum" destination="u33-Af-MEL" id="d8M-xm-HWO"/>
+                        <outlet property="namaKasir" destination="Tg3-wb-KGI" id="8Rq-8F-Fwh"/>
+                        <outlet property="nasi" destination="5DV-PK-MDi" id="RwK-kg-Hgi"/>
+                        <outlet property="totalBayar" destination="G4f-cH-biL" id="hwm-0U-2Vk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.199999999999999" y="71.514242878560722"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
