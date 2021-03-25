@@ -10,6 +10,12 @@ import UIKit
 private let identifier = "Cell"
 
 class ViewCellTwo: UICollectionViewCell {
+    
+    var dataObject: [Data] = [
+        Data(time: "09:00 AM", agenda: "Login", status: "Complete"),
+        Data(time: "10:00 AM", agenda: "Introduction Page", status: "Pending"),
+        Data(time: "09:30 AM", agenda: "Social Media", status: "Pending")
+    ]
 
     lazy var tableView: UITableView = {
         let tableView = UITableView()
@@ -40,11 +46,13 @@ class ViewCellTwo: UICollectionViewCell {
 extension ViewCellTwo: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return dataObject.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! NestedViewCellTwo
+        let dataOb = dataObject[indexPath.item]
+        cell.setupData(data: dataOb)
         return cell
     }
     

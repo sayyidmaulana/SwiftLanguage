@@ -12,3 +12,9 @@ struct MainData {
     let day: String?
     let date: String?
 }
+
+struct Data {
+    let time: String?
+    let agenda: String?
+    let status: String?
+}

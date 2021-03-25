@@ -29,7 +29,7 @@ class NestedViewCellTwo: UITableViewCell {
         thirdtitleLabel.text = "Status"
         thirdtitleLabel.font = UIFont.boldSystemFont(ofSize: 15)
         thirdtitleLabel.tintColor = .orange
-        thirdtitleLabel.tag = 3
+        thirdtitleLabel.tag = 2
         $0.addArrangedSubview(thirdtitleLabel)
         let stackView = UIStackView(arrangedSubviews: [titleLabel, subtitleLabel, thirdtitleLabel])
         stackView.alignment = .center
@@ -50,6 +50,27 @@ class NestedViewCellTwo: UITableViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func getLabel() -> UILabel?
+    {
+        return titleStackView.arrangedSubviews.first(where: {$0.tag == 0}) as? UILabel
+    }
+    
+    func getLabelTwo() -> UILabel?
+    {
+        return titleStackView.arrangedSubviews.first(where: {$0.tag == 1}) as? UILabel
+    }
+    
+    func getLabelThree() -> UILabel?
+    {
+        return titleStackView.arrangedSubviews.first(where: {$0.tag == 2}) as? UILabel
+    }
+    
+    func setupData(data: Data) {
+        self.getLabel()?.text = data.time
+        self.getLabelTwo()?.text = data.agenda
+        self.getLabelThree()?.text = data.status
     }
 
 }
